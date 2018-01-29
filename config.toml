@@ -1,4 +1,4 @@
-baseURL = "http://ganymede-io.github.io/brochure-site/"
+baseURL = "https://ganymede-io.github.io/brochure-site/"
 languageCode = "en-us"
 title = "Ganymede-io"
 theme = "ananke"
