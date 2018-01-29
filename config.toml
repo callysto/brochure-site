@@ -1,9 +1,10 @@
-baseURL = "https://ganymede-io.github.io/brochure-site/"
-# baseURL = "/"
+#baseURL = "https://ganymede-io.github.io/brochure-site/"
+baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Ganymede-io"
 enableEmoji = true
+canonifyurls = true
 
 paginate = 4
 pygmentsCodeFences = true
