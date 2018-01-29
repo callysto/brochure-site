@@ -1,5 +1,5 @@
-# baseURL = "https://ganymede-io.github.io/brochure-site/"
-baseURL = "/"
+baseURL = "https://ganymede-io.github.io/brochure-site/"
+# baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Ganymede-io"
