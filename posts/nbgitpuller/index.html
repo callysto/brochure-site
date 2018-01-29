@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Ganymede-io  | Nbgitpuller</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.30.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link href='https://ganymede-io.github.io/brochure-site/dist/main.css' rel='stylesheet' type="text/css" />
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Nbgitpuller" />
+<meta property="og:description" content="NBGitPuller NBGitPuller is a very useful server extension which uses specially constructed URLs to allow students to be guided through the process of cloning out git repositories. As an example, an instructor might maintain a collection of notebooks for their class, which they will update and extend through the term. By giving a specially constructed URL to their students, each student will automatically be given their own copy of the files at the start of term and can keep it in sync (without losing their changes) as the term progresses." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ganymede-io.github.io/brochure-site/posts/nbgitpuller/" />
+
+
+
+<meta property="article:published_time" content="2018-01-29T10:42:46-08:00"/>
+
+<meta property="article:modified_time" content="2018-01-29T10:42:46-08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Nbgitpuller">
+<meta itemprop="description" content="NBGitPuller NBGitPuller is a very useful server extension which uses specially constructed URLs to allow students to be guided through the process of cloning out git repositories. As an example, an instructor might maintain a collection of notebooks for their class, which they will update and extend through the term. By giving a specially constructed URL to their students, each student will automatically be given their own copy of the files at the start of term and can keep it in sync (without losing their changes) as the term progresses.">
+
+
+<meta itemprop="datePublished" content="2018-01-29T10:42:46-08:00" />
+<meta itemprop="dateModified" content="2018-01-29T10:42:46-08:00" />
+<meta itemprop="wordCount" content="668">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Nbgitpuller"/>
+<meta name="twitter:description" content="NBGitPuller NBGitPuller is a very useful server extension which uses specially constructed URLs to allow students to be guided through the process of cloning out git repositories. As an example, an instructor might maintain a collection of notebooks for their class, which they will update and extend through the term. By giving a specially constructed URL to their students, each student will automatically be given their own copy of the files at the start of term and can keep it in sync (without losing their changes) as the term progresses."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://ganymede-io.github.io/brochure-site/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Ganymede-io
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          POSTS
+        </p>
+        <h1 class="f1">
+          Nbgitpuller
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        
+
+<h2 id="nbgitpuller">NBGitPuller</h2>
+
+<p><a href="https://github.com/data-8/nbgitpuller">NBGitPuller</a> is a very useful server
+extension which uses specially constructed URLs to allow students to be guided
+through the process of cloning out git repositories. As an example, an
+instructor might maintain a collection of notebooks for their class, which they
+will update and extend through the term. By giving a specially constructed URL
+to their students, each student will automatically be given their own copy of
+the files at the start of term and can keep it in sync (without losing their
+changes) as the term progresses.</p>
+
+<p>To use it, you need to construct URLs which specify the syzygy server you want
+to use and the repository you want to interact with. The URL will look something
+like</p>
+
+<pre><code class="language-http">https://ganymede.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&amp;branch=master
+</code></pre>
+
+<p>The raw URLs are intimidatingly long, but they can be broken apart into simple
+parts. Everything before the question mark specifies which jupyterhub service
+you want to use (ganymede.syzygy.ca). After the question mark are a series of
+key=value pairs, which specify options for nbgitpuller</p>
+
+<ul>
+<li><strong><code>repo=https://github.com/pimsubc/public-notebooks</code></strong> is required and
+specifies the URL of the git repository you want to clone.</li>
+<li><strong><code>branch=master</code></strong> is an optional git branch name (default &ldquo;master&rdquo;)</li>
+<li><strong><code>subPath=path/to/file.ipynb</code></strong> is an optional path within the repository to
+restrict the clone to a specific file or directory of interest.</li>
+</ul>
+
+<p>When someone clicks on the link, they are taken to ganymede.syzygy.ca which then
+examines the URL parameters and decides what to do next.</p>
+
+<h2 id="nbgitpuller-service-demonstration">nbgitpuller service demonstration</h2>
+
+<p>The following link demonstrates the nbgitpuller service on ganymede.syzygy.ca by
+cloning out a <a href="https://github.com/pimsmath/public-notebooks/blob/master/nbpuller-example1.ipynb">simple python3 example
+notebook</a>.
+To try the service out, simply click on the following link:</p>
+
+<ul>
+<li><a href="https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a></li>
+</ul>
+
+<p>Clicking on the link should trigger the following actions</p>
+
+<ol>
+<li>Take you to <a href="https://ganymede.syzygy.ca">ganymede.syzygy.ca</a></li>
+<li>Authenticate you via google (if you aren&rsquo;t already)</li>
+<li>Start your server (if it isn&rsquo;t already started)</li>
+<li>Clone out a copy of the notebook to
+ <code>public-notebooks/nbpuller-example1.ipynb</code></li>
+<li>Open the notebook in your browser.</li>
+</ol>
+
+<p>The full URL used in the link is</p>
+
+<pre><code class="language-html">https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&amp;branch=master&amp;subPath=nbpuller-example1.ipynb
+</code></pre>
+
+<p>Splitting this apart, we can see the pattern described above:</p>
+
+<ul>
+<li><strong><code>https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull</code></strong> refers to the
+syzygy instance (ganymede.syzygy.ca).</li>
+<li><strong><code>repo=https://github.com/pimsmath/repo=public-notebook</code></strong> tells nbpuller which
+repository to use.</li>
+<li><strong><code>branch=master</code></strong> specifies the master branch within the repository.</li>
+<li><strong><code>subPath=nbpuller-example1.ipynb</code></strong> tells nbpuller to clone just that one
+file.</li>
+</ul>
+
+<h2 id="how-nbgitpuller-works">How NBGitPuller Works</h2>
+
+<p>As its name implies, NBGitPuller works by constructing and executing git
+commands. <a href="https://git-scm.com">Git</a> is a distributed version control system
+which lets you keep track of changes and merge them with other people&rsquo;s.  The
+initial click on an NBGitPuller link will take the user to the relevant
+JupyterHub, log them in (if necessary) then try to grab a clone of the
+repository. If you&rsquo;re not familiar with git, this is essentially a copy of the
+remote files in the repository with the advantage that both the user and the
+repository owner can continue to modify their own copies of the files
+then ultimately merge them together (inside the user&rsquo;s clone). To do all of this
+NBGitPuller implements a subset of the git commands so that subsequent clicks on
+a link by the user will try to merge changes according to this plan:</p>
+
+<ul>
+<li>If content has changed in both places, prefer local (user) changes over remote
+changes.</li>
+<li>If a file was deleted locally but present in the remote, remote file is
+restored to local repository. This allows users to get a &lsquo;fresh copy&rsquo; of a file
+by just deleting the file locally &amp; clicking the link again.</li>
+<li>If a file exists locally but is untracked by git (maybe someone uploaded it
+manually), then rename the file, and pull in remote copy.</li>
+</ul>
+
+<p>Since git is doing all of the heavy lifting here it is also possible to use git
+directly to do more advanced tasks (e.g. different merging strategies) with the
+caveat that mixing ordinary git commands and NBGitPuller is not a good idea.
+Once you start using git &ldquo;manually&rdquo; for that repository you should avoid using
+the NBGitPuller links as the merging patterns will almost certainly be
+different. As the <a href="https://github.com/data-8/nbgitpuller">NBGitPuller
+documentation</a> says &ldquo;[this] is going to
+cause surprises on an ongoing basis, and should be avoided.&rdquo;</p>
+
+      </div>
+    </article>
+    <aside class="ph3 mt2 mt6-ns">
+      
+
+
+
+
+
+
+
+
+    </aside>
+  </div>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://ganymede-io.github.io/brochure-site/" >
+    &copy; 2018 Ganymede-io
+  </a>
+  
+
+
+
+
+
+
+
+
+  </div>
+</footer>
+
+    <script src="https://ganymede-io.github.io/brochure-site/dist/app.bundle.js" async></script>
+
+  </body>
+</html>

@@ -13,10 +13,10 @@
     
     <item>
       <title>Nbgitpuller</title>
-      <link>https://ganymede-io.github.io/brochure-site/posts/</link>
+      <link>https://ganymede-io.github.io/brochure-site/posts/nbgitpuller/</link>
       <pubDate>Mon, 29 Jan 2018 10:42:46 -0800</pubDate>
       
-      <guid>https://ganymede-io.github.io/brochure-site/posts/</guid>
+      <guid>https://ganymede-io.github.io/brochure-site/posts/nbgitpuller/</guid>
       <description>NBGitPuller NBGitPuller is a very useful server extension which uses specially constructed URLs to allow students to be guided through the process of cloning out git repositories. As an example, an instructor might maintain a collection of notebooks for their class, which they will update and extend through the term. By giving a specially constructed URL to their students, each student will automatically be given their own copy of the files at the start of term and can keep it in sync (without losing their changes) as the term progresses.</description>
     </item>
     
