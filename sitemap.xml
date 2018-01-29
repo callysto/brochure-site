@@ -3,51 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/01/29/nbgitpuller/</loc>
+    <loc>https://ganymede-io.github.io/brochure-site/2018/01/29/nbgitpuller/</loc>
     <lastmod>2018-01-29T10:42:46-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>https://ganymede-io.github.io/brochure-site/posts/</loc>
     <lastmod>2018-01-29T10:42:46-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://ganymede-io.github.io/brochure-site/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/git/</loc>
-    <lastmod>2018-01-29T10:42:46-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-01-29T10:42:46-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/nbgitpuller/</loc>
+    <loc>https://ganymede-io.github.io/brochure-site/tags/git/</loc>
     <lastmod>2018-01-29T10:42:46-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/notebook/</loc>
+    <loc>https://ganymede-io.github.io/brochure-site/</loc>
+    <lastmod>2018-01-29T10:42:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ganymede-io.github.io/brochure-site/tags/nbgitpuller/</loc>
     <lastmod>2018-01-29T10:42:46-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://ganymede-io.github.io/brochure-site/tags/notebook/</loc>
     <lastmod>2018-01-29T10:42:46-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/teaching/</loc>
+    <loc>https://ganymede-io.github.io/brochure-site/tags/</loc>
+    <lastmod>2018-01-29T10:42:46-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganymede-io.github.io/brochure-site/categories/teaching/</loc>
     <lastmod>2018-01-29T10:42:46-08:00</lastmod>
     <priority>0</priority>
   </url>

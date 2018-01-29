@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A List of posts on Ganymede-io</title>
-    <link>/posts/</link>
+    <link>https://ganymede-io.github.io/brochure-site/posts/</link>
     <description>Recent content in A List of posts on Ganymede-io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Jan 2018 10:42:46 -0800</lastBuildDate>
     
-      <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://ganymede-io.github.io/brochure-site/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
         <title>Nbgitpuller</title>
-        <link>/2018/01/29/nbgitpuller/</link>
+        <link>https://ganymede-io.github.io/brochure-site/2018/01/29/nbgitpuller/</link>
         <pubDate>Mon, 29 Jan 2018 10:42:46 -0800</pubDate>
-        <guid>/2018/01/29/nbgitpuller/</guid>
+        <guid>https://ganymede-io.github.io/brochure-site/2018/01/29/nbgitpuller/</guid>
         <description>NBGitPuller NBGitPuller is a very useful server extension which uses specially constructed URLs to allow students to be guided through the process of cloning out git repositories. As an example, an instructor might maintain a collection of notebooks for their class, which they will update and extend through the term. By giving a specially constructed URL to their students, each student will automatically be given their own copy of the files at the start of term and can keep it in sync (without losing their changes) as the term progresses.</description>
       </item>
     
