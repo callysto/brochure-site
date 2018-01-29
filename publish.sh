@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=$(dirname "$0")/site
+DIR=$(dirname "$0")
 
 cd $DIR
 
