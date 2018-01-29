@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Jan 2018 10:42:46 -0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nbgitpuller</title>
+      <link>http://example.org/posts/</link>
+      <pubDate>Mon, 29 Jan 2018 10:42:46 -0800</pubDate>
+      
+      <guid>http://example.org/posts/</guid>
+      <description>NBGitPuller NBGitPuller is a very useful server extension which uses specially constructed URLs to allow students to be guided through the process of cloning out git repositories. As an example, an instructor might maintain a collection of notebooks for their class, which they will update and extend through the term. By giving a specially constructed URL to their students, each student will automatically be given their own copy of the files at the start of term and can keep it in sync (without losing their changes) as the term progresses.</description>
+    </item>
+    
+  </channel>
+</rss>
