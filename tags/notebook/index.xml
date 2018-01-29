@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A List of posts on Ganymede-io</title>
-    <link>/posts/</link>
-    <description>Recent content in A List of posts on Ganymede-io</description>
+    <title>Notebook on Ganymede-io</title>
+    <link>/tags/notebook/</link>
+    <description>Recent content in Notebook on Ganymede-io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Jan 2018 10:42:46 -0800</lastBuildDate>
     
-      <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="/tags/notebook/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
