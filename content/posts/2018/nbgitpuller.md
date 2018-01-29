@@ -2,6 +2,8 @@
 title: "Nbgitpuller"
 date: 2018-01-29T10:42:46-08:00
 draft: false
+tags: ["nbgitpuller","notebook","git"]
+categories: ["teaching"]
 ---
 
 ## NBGitPuller

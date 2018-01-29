@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <div class="homepage">
+    <img class="avatar" width="300px" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Moon_Ganymede_by_NOAA.jpg">
+    {{ .Content }}
+    <hr>
+    <ul>
+      <li>
+      <a href="/posts/">{{ i18n "postsList" . }}</a></li>
+    </ul>
+    {{ if .Site.Menus.pages }}
+      <hr>
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.pages }}
+          <li>
+            <a href="{{ .URL | relURL }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      <li>
+        <a href="/categories/">{{ i18n "categories" . }}</a>
+      </li>
+      <li>
+        <a href="/tags/">{{ i18n "tags" . }}</a>
+      </li>
+      </ul>
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,4 +1,36 @@
-baseURL = "https://ganymede-io.github.io/brochure-site/"
+# baseURL = "https://ganymede-io.github.io/brochure-site/"
+baseURL = "/"
 languageCode = "en-us"
+defaultContentLanguage = "en"
 title = "Ganymede-io"
-theme = "ananke"
+enableEmoji = true
+
+paginate = 4
+pygmentsCodeFences = true
+pygmentsStyle = "native"
+pygmentsUseClasses =  true
+theme = "simplicity"
+
+[author]
+  gravatarEmail = "test@example.com"
+  homepageText = "Ganymede-io"
+  name = "PIMS and Cybera"
+[params]
+  description = "A placeholder site for ganymede."
+  googleAnalytics = ""
+  licence = "[Some Rights Reserved](http://creativecommons.org/licenses/by-sa/4.0/)."
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+[pygmentsOptions]
+  linenos = false
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
+[[menu.pages]]
+  name = "Projects"
+  weight = -100
+  identifier = "projects"
+  url = "/projects/"
