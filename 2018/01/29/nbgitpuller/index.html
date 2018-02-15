@@ -155,10 +155,10 @@ changes) as the term progresses.</p>
 <p>To use it, you need to construct URLs which specify the syzygy server you want
 to use and the repository you want to interact with. The URL will look something
 like</p>
-<div class="highlight"><pre class="chroma"><code class="language-http" data-lang="http">https://ganymede.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&amp;branch=master</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-http" data-lang="http">https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&amp;branch=master</code></pre></div>
 <p>The raw URLs are intimidatingly long, but they can be broken apart into simple
 parts. Everything before the question mark specifies which jupyterhub service
-you want to use (ganymede.syzygy.ca). After the question mark are a series of
+you want to use (hub.callysto.ca). After the question mark are a series of
 key=value pairs, which specify options for nbgitpuller</p>
 
 <ul>
@@ -169,24 +169,24 @@ specifies the URL of the git repository you want to clone.</li>
 restrict the clone to a specific file or directory of interest.</li>
 </ul>
 
-<p>When someone clicks on the link, they are taken to ganymede.syzygy.ca which then
+<p>When someone clicks on the link, they are taken to hub.callysto.ca which then
 examines the URL parameters and decides what to do next.</p>
 
 <h2 id="nbgitpuller-service-demonstration">nbgitpuller service demonstration</h2>
 
-<p>The following link demonstrates the nbgitpuller service on ganymede.syzygy.ca by
+<p>The following link demonstrates the nbgitpuller service on hub.callysto.ca by
 cloning out a <a href="https://github.com/pimsmath/public-notebooks/blob/master/nbpuller-example1.ipynb">simple python3 example
 notebook</a>.
 To try the service out, simply click on the following link:</p>
 
 <ul>
-<li><a href="https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a></li>
+<li><a href="https://hub.callysto.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a></li>
 </ul>
 
 <p>Clicking on the link should trigger the following actions</p>
 
 <ol>
-<li>Take you to <a href="https://ganymede.syzygy.ca">ganymede.syzygy.ca</a></li>
+<li>Take you to <a href="https://hub.callysto.ca">hub.callysto.ca</a></li>
 <li>Authenticate you via google (if you aren&rsquo;t already)</li>
 <li>Start your server (if it isn&rsquo;t already started)</li>
 <li>Clone out a copy of the notebook to
@@ -195,12 +195,12 @@ To try the service out, simply click on the following link:</p>
 </ol>
 
 <p>The full URL used in the link is</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks<span class="err">&amp;</span>branch=master<span class="err">&amp;</span>subPath=nbpuller-example1.ipynb</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">https://hub.callysto.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks<span class="err">&amp;</span>branch=master<span class="err">&amp;</span>subPath=nbpuller-example1.ipynb</code></pre></div>
 <p>Splitting this apart, we can see the pattern described above:</p>
 
 <ul>
-<li><strong><code>https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull</code></strong> refers to the
-syzygy instance (ganymede.syzygy.ca).</li>
+<li><strong><code>https://hub.callysto.ca/jupyter/user-redirect/git-pull</code></strong> refers to the
+syzygy instance (hub.callysto.ca).</li>
 <li><strong><code>repo=https://github.com/pimsmath/repo=public-notebook</code></strong> tells nbpuller which
 repository to use.</li>
 <li><strong><code>branch=master</code></strong> specifies the master branch within the repository.</li>
