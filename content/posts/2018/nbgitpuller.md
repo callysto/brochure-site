@@ -20,12 +20,12 @@ To use it, you need to construct URLs which specify the syzygy server you want
 to use and the repository you want to interact with. The URL will look something
 like 
 ```http
-https://ganymede.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master
+https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master
 ```
 
 The raw URLs are intimidatingly long, but they can be broken apart into simple
 parts. Everything before the question mark specifies which jupyterhub service
-you want to use (ganymede.syzygy.ca). After the question mark are a series of
+you want to use (hub.callysto.ca). After the question mark are a series of
 key=value pairs, which specify options for nbgitpuller
 
   * **`repo=https://github.com/pimsubc/public-notebooks`** is required and
@@ -34,21 +34,21 @@ key=value pairs, which specify options for nbgitpuller
   * **`subPath=path/to/file.ipynb`** is an optional path within the repository to
     restrict the clone to a specific file or directory of interest.
 
-When someone clicks on the link, they are taken to ganymede.syzygy.ca which then
+When someone clicks on the link, they are taken to hub.callysto.ca which then
 examines the URL parameters and decides what to do next.
 
 ## nbgitpuller service demonstration
 
-The following link demonstrates the nbgitpuller service on ganymede.syzygy.ca by
+The following link demonstrates the nbgitpuller service on hub.callysto.ca by
 cloning out a [simple python3 example
 notebook](https://github.com/pimsmath/public-notebooks/blob/master/nbpuller-example1.ipynb).
 To try the service out, simply click on the following link:
 
-  * <a href="https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a>
+  * <a href="https://hub.callysto.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a>
 
 Clicking on the link should trigger the following actions
 
-  1. Take you to [ganymede.syzygy.ca](https://ganymede.syzygy.ca)
+  1. Take you to [hub.callysto.ca](https://hub.callysto.ca)
   2. Authenticate you via google (if you aren't already)
   3. Start your server (if it isn't already started)
   4. Clone out a copy of the notebook to
@@ -57,13 +57,13 @@ Clicking on the link should trigger the following actions
 
 The full URL used in the link is
 ```html
-https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb
+https://hub.callysto.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb
 ```
 
 Splitting this apart, we can see the pattern described above:
 
-  * **`https://ganymede.syzygy.ca/jupyter/user-redirect/git-pull`** refers to the
-    syzygy instance (ganymede.syzygy.ca).
+  * **`https://hub.callysto.ca/jupyter/user-redirect/git-pull`** refers to the
+    syzygy instance (hub.callysto.ca).
   * **`repo=https://github.com/pimsmath/repo=public-notebook`** tells nbpuller which
     repository to use.
   * **`branch=master`** specifies the master branch within the repository.
